@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monthly Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="app">
+    <h1>Monthly Expense Tracker</h1>
+    
+    <!-- Dark Mode -->
+    <div class="toggle-container">
+        <button id="themeToggle">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Global Add Form (FIXED - Always Visible) -->
+    <div class="global-add-form">
+        <h3>➕ Add New Expense</h3>
+        <input type="date" id="exp-date" required>
+        <input type="text" id="exp-category" placeholder="Category" required>
+        <input type="number" id="exp-amount" placeholder="Amount" step="0.01" min="0" required>
+        <input type="text" id="exp-desc" placeholder="Description" required>
+        <button id="addGlobalBtn">Add Expense</button>
+    </div>
+
+    <!-- Months Container -->
+    <div id="monthsContainer" class="months-container"></div>
+
+    <!-- Actions -->
+    <div class="export-container">
+        <button id="exportCSVBtn">📊 Export CSV</button>
+        <button id="clearAllBtn">🗑️ Clear All</button>
+        <button id="refreshBtn">🔄 Refresh</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

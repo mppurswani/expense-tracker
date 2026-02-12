@@ -1,0 +1,239 @@
+/* ===== GLOBAL STYLES ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark {
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+.app {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===== DARK MODE TOGGLE ===== */
+.toggle-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.toggle-container button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #36A2EB;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark .toggle-container button {
+    background-color: #FFCE56;
+    color: #333;
+}
+
+/* ===== MONTH ROW ===== */
+.month-row {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    transition: all 0.2s;
+}
+
+body.dark .month-row {
+    background-color: #2c2c2c;
+    border-color: #555;
+}
+
+.month-row h3 {
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+}
+
+.month-row button.add-expense-btn {
+    float: right;
+    padding: 5px 10px;
+    border: none;
+    background-color: #4BC0C0;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark .month-row button.add-expense-btn {
+    background-color: #FF6384;
+}
+
+/* ===== EXPENSE TABLE ===== */
+.expenses-container {
+    margin-top: 10px;
+}
+
+.expenses-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.expenses-container th, .expenses-container td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+body.dark .expenses-container th, 
+body.dark .expenses-container td {
+    border-color: #555;
+}
+
+.expenses-container th {
+    background-color: #f0f0f0;
+}
+
+body.dark .expenses-container th {
+    background-color: #444;
+}
+
+.expenses-container button {
+    padding: 3px 6px;
+    margin: 0 2px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+}
+
+.edit-btn { background-color: #36A2EB; }
+.delete-btn { background-color: #FF6384; }
+
+body.dark .edit-btn { background-color: #4BC0C0; }
+body.dark .delete-btn { background-color: #FF9F40; }
+
+/* ===== PIE CHART ===== */
+.pieChart {
+    width: 100% !important;
+    max-width: 250px;
+    height: auto !important;
+    display: block;
+    margin: 10px auto;
+}
+
+/* ===== EXPORT / CLEAR BUTTONS ===== */
+.export-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.export-container button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+}
+#refreshBtn {
+    background-color: #4BC0C0 !important;
+    color: white !important;
+}
+
+body.dark #refreshBtn {
+    background-color: #FFCE56 !important;
+    color: #333 !important;
+}
+#exportCSVBtn { background-color: #36A2EB; }
+#clearAllBtn { background-color: #FF6384; }
+
+body.dark #exportCSVBtn { background-color: #4BC0C0; color: #333; }
+body.dark #clearAllBtn { background-color: #FF9F40; color: #333; }
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .month-row h3, .month-row button.add-expense-btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .expenses-container table, .expenses-container th, .expenses-container td {
+        font-size: 12px;
+    }
+    /* ===== GLOBAL ADD FORM (NEW) ===== */
+.global-add-form {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.global-add-form h3 {
+    margin: 0;
+    flex-basis: 100%;
+}
+
+.global-add-form input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 120px;
+}
+
+.global-add-form button {
+    padding: 10px 20px;
+    background: #4BC0C0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+body.dark .global-add-form {
+    background: #2c2c2c;
+    border-color: #555;
+}
+
+body.dark .global-add-form input {
+    background: #444;
+    color: #f5f5f5;
+    border-color: #666;
+}
+
+body.dark .global-add-form button {
+    background: #FF6384;
+}
+
+/* ===== MONTH TOTALS (NEW) ===== */
+.month-row .total {
+    font-weight: bold;
+    color: #36A2EB;
+    font-size: 0.9em;
+}
+#refreshBtn {
+    background-color: #4BC0C0;
+    color: white;
+}
+
+
+body.dark .month-row .total {
+    color: #4BC0C0;
+}
+}
