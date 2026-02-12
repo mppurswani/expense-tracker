@@ -1,9 +1,9 @@
 A **production**-**ready** **desktop expense tracker** built with **JavaFX WebView, HTML/CSS/JavaScript frontend, Java backend, and SQLite database**. Features **Java ↔ JavaScript bridge, interactive pie charts, dark mode**, and **CSV export**
-
+---
 **Demo**
 📱 Add expenses → 🗃️ SQLite saves → 📊 Charts update → 💾 CSV export
 Click month → See category pie chart → Edit/Delete → Data persists!
-
+---
 🚀 **Features**:
 ✅ Add/Edit/Delete expenses with validation
 ✅ Month-wise categorization with totals
@@ -13,14 +13,14 @@ Click month → See category pie chart → Edit/Delete → Data persists!
 ✅ SQLite persistence + localStorage backup
 ✅ Java ↔ JavaScript bridge (seamless sync)
 ✅ Responsive UI (1200x800 desktop)
-
+---
 **Tech Stack**
 _**Frontend: HTML5 + CSS3 + ES6 + Chart.js
 Backend: Java 24 + JavaFX 24 WebView
 Database: SQLite (expenses.db)
 Bridge: JavaConnector (JSObject)
 Build: javac/java (Maven-free)**_
-
+---
 **Project Structure**
 expensetracker/
 ├── src/
@@ -36,13 +36,14 @@ expensetracker/
 ├── slf4j-*.jar             # Logging
 └── expenses.db             # SQLite data (auto-created)
 
+---
 **Compile**
 "C:\Program Files\Java\jdk-24\bin\javac" ^
 --module-path "C:\javafx-24\lib" ^
 --add-modules javafx.controls,javafx.fxml,javafx.web ^
 -cp ".;sqlite-jdbc.jar;slf4j-api-2.0.13.jar;slf4j-simple-2.0.13.jar" ^
 src\*.java
-
+---
 **Architecture Overview**
 graph TD
     UI[HTML/CSS/JS Frontend] --> Bridge[Java ↔ JS Bridge]
@@ -51,7 +52,7 @@ graph TD
     JavaConnector --> DAO[ExpenseDAO]
     DAO --> DB[SQLite expenses.db]
     UI --> Charts[Chart.js Pie Charts]
-
+---
 **Key Technical Highlights**
 1.**Java <-> JavaScript Bridge**
 // JavaFX WebView-> Inject JavaConnector
@@ -71,7 +72,7 @@ if (typeof this.addExpenseReal === 'function') {
 } else {
     localStorage.setItem(...); // Fallback
 }
-
+---
 **Skills Demonstrated**
 ✅ Full-stack development (Java + Web)
 ✅ Desktop application architecture
@@ -81,7 +82,7 @@ if (typeof this.addExpenseReal === 'function') {
 ✅ Responsive UI/UX design
 ✅ Data visualization (Chart.js)
 ✅ Production deployment
-
+---
 **Future Enhancements**
 JAR packaging + auto-launcher
 Maven/Gradle build system
@@ -89,5 +90,5 @@ JUnit tests for DAO layer
 Multi-currency support
 PDF export + charts
 Cloud sync (Firebase)
-
+---
  Project by Mayank Purswani
