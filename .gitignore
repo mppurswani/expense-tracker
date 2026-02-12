@@ -1,0 +1,20 @@
+# Compiled files
+*.class
+bin/
+out/
+
+# Database files
+*.db
+*.sqlite
+
+# CSV exports
+*.csv
+
+# JAR files
+*.jar
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
