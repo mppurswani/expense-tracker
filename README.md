@@ -1,7 +1,7 @@
-**Expense Tracker – JavaFX Desktop App**
+## Expense Tracker – JavaFX Desktop App
 A production-ready desktop expense tracker built with JavaFX WebView, HTML/CSS/JavaScript frontend, Java backend, and SQLite database. Features Java ↔ JavaScript bridge, interactive pie charts, dark mode, and CSV export.
 
-📱**Demo**
+## 📱Demo
 Add expenses → 🗃️ SQLite saves → 📊 Charts update → 💾 CSV export
 Click month → See category pie chart → Edit/Delete → Data persists!
 
@@ -101,12 +101,19 @@ if (typeof this.addExpenseReal === 'function') {
 
 ## Skills Demonstrated
 ✅ Full-stack development (Java + Web)
+
 ✅ Desktop application architecture
+
 ✅ Database design (SQLite + JDBC)
+
 ✅ JavaFX WebView integration
+
 ✅ JavaScript bridge communication
+
 ✅ Responsive UI/UX design
+
 ✅ Data visualization (Chart.js)
+
 ✅ Production deployment
 
 
