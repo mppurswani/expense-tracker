@@ -5,7 +5,7 @@ A production-ready desktop expense tracker built with JavaFX WebView, HTML/CSS/J
 Add expenses → 🗃️ SQLite saves → 📊 Charts update → 💾 CSV export
 Click month → See category pie chart → Edit/Delete → Data persists!
 
-✨ **Features**
+## ✨ Features
 ✅ Add/Edit/Delete expenses with validation
 
 ✅ Month-wise categorization with totals
@@ -99,7 +99,7 @@ if (typeof this.addExpenseReal === 'function') {
 }
 ```
 
-**Skills Demonstrated**
+## Skills Demonstrated
 ✅ Full-stack development (Java + Web)
 ✅ Desktop application architecture
 ✅ Database design (SQLite + JDBC)
@@ -110,7 +110,7 @@ if (typeof this.addExpenseReal === 'function') {
 ✅ Production deployment
 
 
-🚀 **Future Enhancements**
+## 🚀 Future Enhancements
 JAR packaging + auto-launcher
 Maven/Gradle build system
 JUnit tests for DAO layer
@@ -120,7 +120,7 @@ Cloud sync (Firebase)
 
 
 
-👨‍💻 **Author**  
+## 👨‍💻 Author 
 Mayank Purswani
 
     
