@@ -119,10 +119,15 @@ if (typeof this.addExpenseReal === 'function') {
 
 ## 🚀 Future Enhancements
 JAR packaging + auto-launcher
+
 Maven/Gradle build system
+
 JUnit tests for DAO layer
+
 Multi-currency support
+
 PDF export + charts
+
 Cloud sync (Firebase)
 
 
