@@ -22,14 +22,15 @@ Click month → See category pie chart → Edit/Delete → Data persists!
 
 ✅ Responsive UI (1200x800 desktop)
 
-🛠 **Tech Stack**
-**Frontend**: HTML5 + CSS3 + ES6 + Chart.js
-**Backend**: Java 24 + JavaFX 24 WebView
-**Database**: SQLite (expenses.db)
-**Bridge**: JavaConnector (JSObject)
-**Build**: javac/java (Maven-free)
+## 🛠 Tech Stack
+- **Frontend:**  HTML5 + CSS3 + ES6 + Chart.js
+- **Backend:**  Java 24 + JavaFX 24 WebView
+- **Database:**  SQLite (expenses.db)
+- **Bridge:**  JavaConnector (JSObject)
+- **Build:** javac/java (Maven-free)
 
 📁 **Project Structure**
+```text
 expensetracker/
 ├── src/
 │   ├── index.html          # Main UI
@@ -43,6 +44,7 @@ expensetracker/
 ├── sqlite-jdbc.jar         # Database driver
 ├── slf4j-*.jar             # Logging
 └── expenses.db             # SQLite data (auto-created)
+```
 
 **Compile & Run**
 **Compile**
